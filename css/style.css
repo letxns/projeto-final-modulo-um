@@ -11,18 +11,19 @@
     text-align: center;
     justify-content: center;
     align-content: center;
-    background-color: rgba(137, 194, 227, 0.883);;
-    color: rgb(0, 0, 0);
+    background-color: rgba(37, 2, 46, 0.93);
+    color: rgb(255, 255, 255);
     border-radius: 5px;
-    border: 1px solid rgba(185, 198, 210, 0.49);
+    border: 1px solid rgba(195, 0, 244, 0.515);
     font-size: 1.8em;
     font-weight: bolder;
     font-family: 'Amatic SC', cursive;
 }
 
 .botao:hover {
-    background-color: rgba(95, 187, 241, 0.883);
-    color: rgb(2, 25, 67);
+    background-color: rgba(255, 255, 255, 0.93);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(195, 0, 244, 0.515);
 }
 
 .caixa-perguntas{
@@ -33,7 +34,7 @@
     flex-direction: column;
     text-align: start;
     align-content: center;
-    color: rgba(250, 235, 215, 0.775);
+    color: rgba(255, 255, 255, 0.79);
     border-radius: 5px;
 }
 
@@ -102,12 +103,7 @@
     width: auto;
     height: auto;
 }
-/*
-.container-iniciar-jogo img{
-    align-self: center;
-    width: 45%;
-}*/
- 
+
 .container-iniciar-jogo a:hover{
     color: #ffffff;
     background-color: rgb(15, 146, 144);
@@ -173,8 +169,7 @@
 }
 
 .comecar-botao-personagem{
-    width: 50%;
-    height: auto;
+    width: auto;
     padding: 2%;
     background-color: rgba(37, 2, 46, 0.93);
     color: rgb(255, 255, 255);
@@ -196,7 +191,7 @@
 }
 
 .comecar-personagem{
-    background-color: rgba(1, 5, 10, 0.883);
+    background-color: rgba(160, 167, 174, 0.263);
     border: 1px solid rgba(185, 198, 210, 0.883);
     border-radius: 5px;    
     width: auto;
@@ -265,7 +260,6 @@
 }
 
 .personagem-escolhido{
-    border: 1px solid rgba(177, 236, 247, 0.883);
     border-radius: 5px;    
     width: auto;
     height: auto;
@@ -273,8 +267,11 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    padding: 0.5% 0 0 0;
-    margin: 1%;
+}
+
+.personagem-escolhido img{
+    width: 100%;
+    border-radius: 15px;   
 }
 
 .titulo{
@@ -336,9 +333,13 @@
         color:#220202;
     }
 
-    .imagem-personagem img{
+    .imagem-personagem img {
         width: auto;
         height: auto;
+    }
+
+    .personagem-escolhido img {
+        width: 98%;
     }
 
     .iniciar-jogo{
