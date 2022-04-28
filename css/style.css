@@ -40,10 +40,11 @@
 
 .caixa-perguntas p{ 
     margin-bottom: 2%;
+    font-size: 1.5em;
 }
 
 .container{
-    background-image: url(/projeto-final-modulo-um/assets/bg8.jpg);
+    background-image: url(/modulo-um/projeto-final-modulo-um/assets/bg8.jpg);
     background-color: rgba(233, 245, 177, 0.853);
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +64,7 @@
     flex-direction: column;
     align-self: center;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 1%;
     padding-bottom: 1%;
     background: rgba(205, 218, 255, 0.407);
@@ -125,7 +126,6 @@
     text-align: center;
     justify-content: space-around;
     width: 100%;
-    height: 100%;
 }
 
 .container-personagens a{
@@ -141,9 +141,7 @@
     background-color: rgba(72, 136, 196, 0.883);
     border: 1px solid rgba(185, 198, 210, 0.883);
     border-radius: 15px;
-    width: 100%;
-    height: 100vh;
-    padding: 1.5%;
+    padding: 0 1% 0 1%;
 }
 
 .comecar-botao {
@@ -205,6 +203,10 @@
     margin-bottom: 10%;
 }
 
+.escolher-personagem{
+    height: 100vh;
+}
+
 .escolhido{
     width: auto;
     height: 100vh;
@@ -229,6 +231,14 @@
     color: blue;
 }
 
+.imagem-personagem{
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    height: 100%;
+    border-radius: 20px;
+}
+
 .iniciar-jogo{
     font-family: 'Amatic SC', cursive;
     font-size: 1.5em;
@@ -244,11 +254,6 @@
     width: 20%;
 }
 
-.personagem {
-    width: 25%;
-    height: auto;
-}
-
 .personagem:hover{
     background-color: rgba(167, 248, 214, 0.883);
 }
@@ -256,15 +261,17 @@
 .personagem-escolhido{
     border-radius: 5px;    
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     align-content: center;
     text-align: center;
 }
 
 .personagem-escolhido img{
     width: 100%;
+    height: auto;
     border-radius: 15px;   
 }
 
@@ -275,8 +282,8 @@
     text-align: center;
     align-items: center;
     flex-direction: column;
-    padding: 2%;
-    margin-bottom: 1%;
+    padding-bottom: 0.5%;
+    margin-bottom: 0.5%;
     font-size: 1.4em;
 }
 
@@ -304,7 +311,7 @@
 
     .comecar-personagem{
         flex-direction: column;
-        width: 100%;
+        width: 98%;
         height: auto;
     }
 
@@ -318,7 +325,7 @@
 
     .escolhido{
         width: 100%;
-        height: 100vh;
+        height: auto;
     }
 
     .footer{

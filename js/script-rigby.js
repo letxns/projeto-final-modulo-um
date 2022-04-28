@@ -1,13 +1,16 @@
 function caminhoRigby(){
     var caminhoRigby = document.querySelector("#caminho-rigby");
     caminhoRigby.addEventListener("click", function(event){
-    var comida = prompt("Qual comida você deseja levar à festa? \n 1 → Mac and Cheese \n 2 → Chimichurri");
+    var comida = prompt("Qual comida você deseja levar à festa? \n 1 → Mac and Cheese \n 2 → Chimichurri \n 3 → Estrogonoffe");
     while(true){
         if(comida == 1){
             window.location="rigby-mac-n-cheese.html"; 
             event.preventDefault();
         } else if(comida == 2){
             window.location="rigby-chimichurri.html";
+            event.preventDefault();
+        } else if(comida == 3){
+            window.location="rigby-estrogonoffe.html";
             event.preventDefault();
         }else {
             alert("Resposta inválida.");
@@ -47,6 +50,57 @@ function chimichurri() {
             event.preventDefault();
         }else {
             alert("Resposta inválida.");
+        } 
+        break;
+    }
+}
+
+function estrogonoffe(){
+    var estrogonoffe = prompt("Pensando em poupar tempo, qual seria a melhor opção? \n 1 → Preparar seu prato no microondas \n 2 → Procurar um chef auxiliar");
+    while(true){
+    if(estrogonoffe == 1){
+            window.location="estrogonoffe-um.html";
+            event.preventDefault()
+        } else if(estrogonoffe == 2){
+            window.location="estrogonoffe-dois.html";
+            event.preventDefault();
+        }else {
+            alert("Resposta inválida.");
+            estrogonoffe()
+        } 
+        break;
+    }
+}
+
+function caminhoEstrogonoffe(){
+    var estrogonoffe = prompt("Enquanto o prato está no microondas, você deveria aproveitar para cortar alguns temperos? \n 1 → Sim \n 2 → Não, ficarei olhando fixamente para o microondas enquanto o prato não estiver pronto");
+    while(true){
+    if(estrogonoffe == 1){
+            window.location="estrogonoffe-um-um.html";
+            event.preventDefault()
+        } else if(estrogonoffe == 2){
+            window.location="estrogonoffe-um-dois.html";
+            event.preventDefault();
+        }else {
+            alert("Resposta inválida.");
+            estrogonoffe()
+        } 
+        break;
+    }
+}
+
+function caminhoEstrogonoffeOlhar(){
+    var estrogonoffe = prompt("1 → Irei correndo \n2 → Irei de bicicleta");
+    while(true){
+    if(estrogonoffe == 1){
+            window.location="estrogonoffe-um-dois-um.html";
+            event.preventDefault()
+        } else if(estrogonoffe == 2){
+            window.location="estrogonoffe-um-dois-dois.html";
+            event.preventDefault();
+        }else {
+            alert("Resposta inválida.");
+            estrogonoffe()
         } 
         break;
     }

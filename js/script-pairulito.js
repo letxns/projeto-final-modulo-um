@@ -2,13 +2,16 @@
 function caminhoPairulito(){
     var caminhoPairulito = document.querySelector("#caminho-pairulito");
     caminhoPairulito.addEventListener("click", function(event){
-    var comida = prompt("Qual comida você deseja levar à festa? \n 1 → Bolo \n 2 → Tiramisu");
+    var comida = prompt("Qual comida você deseja levar à festa? \n 1 → Bolo \n 2 → Tiramisu \n 3 → Torta de limão");
     while(true){
         if(comida == 1){
             window.location="pairulito-bolo.html"; //abrir essa página antes de carregar os próximos prompts
             event.preventDefault();
         } else if(comida == 2){
             window.location="pairulito-tiramisu.html";
+            event.preventDefault();
+        }else if(comida == 3){
+            window.location="pairulito-torta-de-limao.html";
             event.preventDefault();
         }else {
             alert("Resposta inválida.");
@@ -75,6 +78,22 @@ function caminhoTiramisu() {
             event.preventDefault()
         } else if(tiramisu == 2){
             window.location="tiramisu-dois.html";
+            event.preventDefault();
+        }else {
+            alert("Resposta inválida.");
+        } 
+        break;
+    }
+}
+
+function caminhoTorta() {
+    var torta =  prompt("1 → No mercadinho perto de casa \n2 → Naquele mercado lindo que fica no centro da cidade!");
+    while(true){
+    if(torta == 1){
+            window.location="pairulito-torta-de-limao-um.html"; //abrir essa página antes de carregar os próximos prompts
+            event.preventDefault()
+        } else if(torta == 2){
+            window.location="pairulito-torta-de-limao-dois.html";
             event.preventDefault();
         }else {
             alert("Resposta inválida.");

@@ -1,4 +1,3 @@
-//parte pronta
 function caminhoMordecai(){
     var caminhoMordecai = document.querySelector("#caminho-mordecai");
     caminhoMordecai.addEventListener("click", function(event){
@@ -42,7 +41,7 @@ function caminhoHotDog(){
 }
 
 function hotDogCaseiro() {
-    var hotDogCaseiro =  prompt("Você escolheu se arriscar na cozinha preparando cachorro quente! \n \n 1 → Você se garante em preparar sua própria receita de cachorro quente \n 2 → Você decide utilizar a receita secreta secular de sua família \n \n Digite o número correspondente à opção");
+    var hotDogCaseiro =  prompt("Você escolheu se arriscar na cozinha preparando cachorro quente! \n 1 → Você se garante em preparar sua própria receita de cachorro quente \n 2 → Você decide utilizar a receita secreta secular de sua família \n \n Digite o número correspondente à opção");
     while(true){
     if(hotDogCaseiro == 1){
             window.location="hotdog-caseiro-um.html";
